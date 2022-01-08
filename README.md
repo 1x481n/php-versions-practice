@@ -1,6 +1,6 @@
-# php-new-features
+# PHP各版本实践
 
-New feature practices for different versions of PHP
+- 不同版本的新特性实践
 
 
 ## PHP版本大全
