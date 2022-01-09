@@ -1,5 +1,5 @@
 <component name="ProjectRunConfigurationManager">
-  <configuration default="false" name="FirstClass.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" folderName="PHP" path="$PROJECT_DIR$/php-versions-practice/PHP8.1/FirstClass.php">
+  <configuration default="false" name="FirstClass.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" folderName="PHP8.1" path="$PROJECT_DIR$/php-versions-practice/PHP8.1/FirstClass.php">
     <CommandLine>
       <PhpTestInterpreterSettings>
         <option name="interpreterName" value="PHP8.1.0" />

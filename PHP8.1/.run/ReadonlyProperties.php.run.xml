@@ -1,5 +1,5 @@
 <component name="ProjectRunConfigurationManager">
-  <configuration default="false" name="ReadonlyProperties.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" folderName="PHP" path="$PROJECT_DIR$/php-versions-practice/PHP8.1/ReadonlyProperties.php">
+  <configuration default="false" name="ReadonlyProperties.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" folderName="PHP8.1" path="$PROJECT_DIR$/php-versions-practice/PHP8.1/ReadonlyProperties.php">
     <CommandLine>
       <PhpTestInterpreterSettings>
         <option name="interpreterName" value="PHP8.1.0" />
