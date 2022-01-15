@@ -22,7 +22,8 @@ class NewInitializer
     //    $this->logger = $logger ?? new NullLogger();
     //}
     // PHP8.1
-    #[Pure] public function __construct(Logger $logger = new NullLogger(),)
+    #[Pure]
+    public function __construct(Logger $logger = new NullLogger(),)
     {
         $this->logger = $logger;
     }
