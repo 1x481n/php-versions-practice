@@ -11,6 +11,9 @@ https://museum.php.net/
 ### PHP8.1
 - https://www.php.net/releases/8.1/zh.php
 
+### PHP8.0
+- https://www.php.net/releases/8.0/zh.php
+
 ### 版本记录（百度百科）
 |版本|发布日期|最终支持|相关更新及备注|
 |----|----|----|----|
