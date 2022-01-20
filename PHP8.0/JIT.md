@@ -4,7 +4,7 @@
 
 [PHP 8新特性之JIT简介](https://www.laruence.com/2020/06/27/5963.html)
 
-![](https://www.laruence.com/medias/2020/06/Screen-Shot-2020-06-28-at-18.31.57.png)
+![](Screen-Shot-2020-06-28-at-18.31.57.png)
 
 左图是PHP8之前的Opcache流程示意图， 右图是PHP8中的Opcache示意图， 可以看出几个关键点:
 
