@@ -1,0 +1,10 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="NullSafeOperator.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" folderName="PHP8.0" path="$PROJECT_DIR$/php-practice/php-versions-practice/PHP8.0/NullSafeOperator.php">
+    <CommandLine>
+      <PhpTestInterpreterSettings>
+        <option name="interpreterName" value="PHP8.0.13" />
+      </PhpTestInterpreterSettings>
+    </CommandLine>
+    <method v="2" />
+  </configuration>
+</component>
