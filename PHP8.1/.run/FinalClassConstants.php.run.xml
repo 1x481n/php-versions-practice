@@ -1,0 +1,10 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="FinalClassConstants.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" folderName="PHP8.1" path="$PROJECT_DIR$/php-practice/php-versions-practice/PHP8.1/FinalClassConstants.php">
+    <CommandLine>
+      <PhpTestInterpreterSettings>
+        <option name="interpreterName" value="PHP8.1.0" />
+      </PhpTestInterpreterSettings>
+    </CommandLine>
+    <method v="2" />
+  </configuration>
+</component>
