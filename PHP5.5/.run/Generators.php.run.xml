@@ -1,0 +1,10 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="Generators.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" folderName="PHP5.5" path="$PROJECT_DIR$/php-practice/php-versions-practice/PHP5.5/Generators.php">
+    <CommandLine parameters="-ddisplay_errors=on">
+      <PhpTestInterpreterSettings>
+        <option name="interpreterName" value="PHP5.5.38" />
+      </PhpTestInterpreterSettings>
+    </CommandLine>
+    <method v="2" />
+  </configuration>
+</component>
