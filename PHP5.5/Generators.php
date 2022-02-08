@@ -20,18 +20,15 @@ function gen()
         $i = 0;
         while (true) {
             //$receive = (yield "gen" . PHP_EOL);
-            $receive = (yield $i => "gen" . PHP_EOL);
-            echo 'inner step:' . $i . PHP_EOL;
+            $receive = (yield $i++ => "gen" . PHP_EOL);
+            //echo 'inner step:' . $i . PHP_EOL;
+            //$i++;
             if ($receive) {
-                echo 'receive:' . $receive . PHP_EOL;
+                echo 'input:' . $i . '-' . $receive . PHP_EOL;
                 if ($receive == 'should end') {
                     break;
                 }
             }
-            if ($i > 9) {
-                break;
-            }
-            $i++;
         }
     } catch (\Exception $e) {
         echo "Exception: {$e->getMessage()}\n";
@@ -46,16 +43,13 @@ var_dump($gen instanceof Generator);
 var_dump($gen instanceof Iterator);
 
 
-echo 'output:' . $gen->current();
+echo 'output:' . "{$gen->key()} - {$gen->current()}";
 $gen->next();
-echo 'output:' . $gen->current();
+echo 'output:' . "{$gen->key()} - {$gen->current()}";
 
 $gen->send('hhhh');
 $gen->next();
-echo $gen->current();
-
-//echo $gen->next();
-//echo $gen->current();
+echo 'output:' . "{$gen->key()} - {$gen->current()}";
 
 
 //$gen->throw(new \Exception('Test'));
@@ -64,6 +58,7 @@ echo $gen->current();
 // Throws an exception if the generator is currently after the first yield.
 //$gen->rewind();
 
+// $gen-next()之后，不可再使用foreach(会隐式调用$gen->rewind())
 // Throws an exception if the generator is currently after the first yield.
 //foreach ($gen as $k => $v) {
 //
@@ -76,15 +71,31 @@ echo $gen->current();
 var_export(['valid:' => $gen->valid()]);
 
 echo PHP_EOL;
+echo '-----------------------';
+echo PHP_EOL;
 
 while (true) {
-    if ($gen->key() == 10) {
-        $gen->send('should end');
-        var_export(['valid:' => $gen->valid()]);
+    $gen->next();
+    if ($gen->key() > 9) {
+        //$gen->send('should end');
+        //var_export(['valid:' => $gen->valid()]);
         break;
     }
     echo "{$gen->key()} - {$gen->current()}";
-    $gen->next();
 }
+echo PHP_EOL;
+echo '-----------------------';
+echo PHP_EOL;
 
+do {
+    echo "{$gen->key()} - {$gen->current()}";
+    $gen->next();
+} while (($gen->key() < 20));
 
+echo PHP_EOL;
+echo '-----------------------';
+echo PHP_EOL;
+
+for (; $gen->key() < 30; $gen->next()) {
+    echo "{$gen->key()} - {$gen->current()}";
+}
